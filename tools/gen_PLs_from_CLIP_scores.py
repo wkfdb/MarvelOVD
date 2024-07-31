@@ -61,7 +61,7 @@ def postprocessing(
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='generate PLs with pre-computed CLIP scores.')
-    parser.add_argument('--gt_json', type=str, default='../datasets/coco/annotations/instances_train2017.json', help='gt coco json file. We only annotations of base categories')
+    parser.add_argument('--gt_json', type=str, default='../datasets/coco/annotations/open_voc/instances_train.json', help='gt coco json file. We only annotations of base categories')
     parser.add_argument('--clip_score_dir', type=str, default='./CLIP_scores_for_PLs', help='dir to save intermediate CLIP scores')
     parser.add_argument('--pl_save_file', type=str, default='../datasets/coco/annotations/open_voc/train_novel_candidate_0.5.json',
                         help='PL coco json file')

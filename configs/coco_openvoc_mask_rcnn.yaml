@@ -12,7 +12,6 @@ MODEL:
   ROI_MASK_HEAD:
     CLS_AGNOSTIC_MASK: True
 DATASETS:
-  # TRAIN: ("coco_openvoc_train2_0.8",)
   TRAIN: ("coco_openvoc_train",)
   TEST: ('coco_openvoc_val_all', )
 SOLVER:
