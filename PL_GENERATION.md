@@ -29,12 +29,12 @@ CUDA_VISIBLE_DEVICES=3 python get_CLIP_scores_for_PLs.py '../configs/mask_rcnn_R
 
 **Stage 2**: Generate PL using pre-computed CLIP scores.
 ```
-python gen_PLs_from_CLIP_scores.py --gt_json ../datasets/coco/annotations/instances_train2017.json --clip_score_dir ./CLIP_scores_for_PLs --pl_save_file ../datasets/coco/annotations/inst_train2017_basePL.json
+python gen_PLs_from_CLIP_scores.py --gt_json ../datasets/coco/annotations/instances_train2017.json --clip_score_dir ./CLIP_scores_for_PLs --pl_save_file ../datasets/coco/annotations/openvoc/train_novel_candidate_0.5.json
 ```
 
-**Finally**: Add text embedding into the json file for training or evaluation. The postfix `_txtEmb` will be added in the input file name and results in the final file `inst_train2017_basePL_txtEmb.json`. You may use `test_PL_txtEmb.json` in the last section as validation in the training.
+**Finally**: Add text embedding into the json file for training or evaluation. The postfix `_txtEmb` will be added in the input file name and results in the final file `train_novel_candidate_0.5_txtEmb.json`. You may use `test_PL_txtEmb.json` in the last section as validation in the training.
 ```
-python add_textEmb_cocojson.py ../datasets/coco/annotations/inst_train2017_basePL.json
+python add_textEmb_cocojson.py ../datasets/coco/annotations/openvoc/train_novel_candidate_0.5.json
 ```
 
 
