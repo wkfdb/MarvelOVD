@@ -61,9 +61,14 @@ Mask R-CNN:
 </tbody></table>
 
 ## Training
-We train the model under regulr data augmentations (no Large Scale Jittering), without extra GPU memory occupation.
+We train the model under regulr data augmentations (no Large Scale Jittering), without extra GPU memory occupation. (Runing on 4 GPUs with 24G Memory per GPU)
 
 Training command
 ```bash 
-python train_net.py --config configs/coco_openvoc_LSJ.yaml  --num-gpus=4
+python train_net.py --config configs/coco_ssod.yaml  --num-gpus=4
 ```
+
+
+## Notes
+The code is highly borrowed from [VL_PLM](https://github.com/xiaofeng94/VL-PLM), big thanks for the open-source commuity.
+Questions and Issues, please contract wangk229@mail2.sysu.edu.cn
