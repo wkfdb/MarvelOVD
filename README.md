@@ -61,7 +61,7 @@ Mask R-CNN:
 </tbody></table>
 
 ## Training
-We train the model under regulr data augmentations (no Large Scale Jittering), without extra GPU memory occupation. (Runing on 4 GPUs with 24G Memory per GPU)
+We train the model under regular data augmentations (no Large Scale Jittering), without extra GPU memory occupation. (Runing on 4 GPUs with 24G Memory per GPU)
 
 Training command
 ```bash 
