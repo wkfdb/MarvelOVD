@@ -39,7 +39,7 @@ datasets/
 
 MarvelOVD dynamically learns open-vocabulary knowledge from offline-generated pseudo-labels under the guidance from the online training detector.
 
-Please refer to [pseudo label generation instruction](https://github.com/wkfdb/MarvelOVD/blob/main/PL_GENERATION.md) to generate offline pseudo-labels.
+If necessary, please refer to [pseudo label generation instruction](https://github.com/wkfdb/MarvelOVD/blob/main/PL_GENERATION.md) to generate offline pseudo-labels.
 
 ## Results on OVD-COCO
 Mask R-CNN:
