@@ -11,7 +11,7 @@ Please follow the official installation [instructions](https://github.com/facebo
 
 Download the [COCO dataset](https://cocodataset.org/#home), and put it in the `datasets/` directory.
 
-Download VL-PLM [pre-generated pseudo-labeled data](https://drive.google.com/drive/folders/1TnoMobCYmjcI_eOPBOJpZZw39tUK6dDx?usp=sharing), and put them in the `datasets/open_voc` directory.
+Download VL-PLM [pre-generated pseudo-labeled data](https://drive.google.com/drive/folders/1hv9YZF0mGUQVCmDgEzGxYi9FtqIukNBd?usp=drive_link), and put them in the `datasets/open_voc` directory.
 
 Dataset are organized in the following way:
 ```bazaar
