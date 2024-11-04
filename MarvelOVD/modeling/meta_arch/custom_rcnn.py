@@ -73,7 +73,8 @@ class CustomRCNN(GeneralizedRCNN):
 
     @torch.no_grad()
     def refine_pseudo_labels(self, weak_features, gt_instances):
-        preds_on_gt = self.roi_heads.get_preds_for_pseudo_labels(weak_features, [x.gt_boxes for x in gt_instances])
+        # preds_on_gt = self.roi_heads.get_preds_for_pseudo_labels(weak_features, [x.gt_boxes for x in gt_instances])
+        preds_on_gt = self.roi_heads.get_preds_from_weak_features(weak_features, [x.gt_boxes for x in gt_instances])
         refined_gt_instances = []
         for preds_per_image, gt_per_img in zip(preds_on_gt, gt_instances):
             
